@@ -12,7 +12,8 @@ class Book
     private String author;
     private String title;
     private int pages;
-    private String Details;
+    private String details;
+    Private String  refNumber;
     
 
     /**
@@ -24,7 +25,8 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
-        details = bookAuthor, bookTitle, bookPages;
+        details = author,title,pages;
+        Number = "";
     }
 
     // Add the methods here...
@@ -60,7 +62,13 @@ class Book
         System.out.println("This is the Author of the book:");
         return author;
         System.out.println("This is how many pages there are:");
+        return pages;
+        System.out.println("This is the Ref Number:")
+        return refNumber;
         
+    }
+    
+    public void setRefNumber(String ref){
     }
     
    
