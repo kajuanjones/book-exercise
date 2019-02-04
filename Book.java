@@ -12,16 +12,19 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String Details;
+    
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, String getDetails)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        details = bookAuthor, bookTitle, bookPages;
     }
 
     // Add the methods here...
@@ -46,9 +49,18 @@ class Book
         System.out.println();
         return title;
     }
-    
+    // We add a method for the number of pages.
     public int getPages(){
         return pages;
+    }
+    // This is the method for getting the details of the book.
+    public String printDetails(){
+        System.out.println("This is the Title of the book:");
+        return title;
+        System.out.println("This is the Author of the book:");
+        return author;
+        System.out.println("This is how many pages there are:");
+        
     }
     
    
